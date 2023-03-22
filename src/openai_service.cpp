@@ -97,7 +97,7 @@ vector<OpenAIModel> OpenAIService::ListModels()
 			curl_easy_getinfo(httpsClient, CURLINFO_RESPONSE_CODE, &response_code);
 			std::cout << "Response code: " << response_code << std::endl;
 			std::cout << "Response body: " << std::endl;
-			std::cout << chunk.response << std::endl;  // 输出响应体
+			std::cout << chunk.response << std::endl;
 
 			if (chunk.response != NULL) {
 				Json::Value json;
@@ -156,7 +156,7 @@ OpenAIModel* OpenAIService::RetrieveModel(const string modelName)
 			curl_easy_getinfo(httpsClient, CURLINFO_RESPONSE_CODE, &response_code);
 			std::cout << "Response code: " << response_code << std::endl;
 			std::cout << "Response body: " << std::endl;
-			std::cout << chunk.response << std::endl;  // 输出响应体
+			std::cout << chunk.response << std::endl;  // 
 
 			// Parse JSON data from a string
 			if (chunk.response != NULL) {
@@ -269,7 +269,7 @@ Completion* OpenAIService::CreateCompletion(CreateCompletionData data)
 			curl_easy_getinfo(httpsClient, CURLINFO_RESPONSE_CODE, &response_code);
 			std::cout << "Response code: " << response_code << std::endl;
 			std::cout << "Response body: " << std::endl;
-			std::cout << chunk.response << std::endl;  // 输出响应体
+			std::cout << chunk.response << std::endl;  // 
 
 			// Parse JSON data from a string
 			if (chunk.response != NULL) {
@@ -388,7 +388,7 @@ ChatCompletion* OpenAIService::CreateChatCompletion(ChatCompletionData data)
 			curl_easy_getinfo(httpsClient, CURLINFO_RESPONSE_CODE, &response_code);
 			std::cout << "Response code: " << response_code << std::endl;
 			std::cout << "Response body: " << std::endl;
-			std::cout << chunk.response << std::endl;  // 输出响应体
+			std::cout << chunk.response << std::endl;  // 
 
 			// Parse JSON data from a string
 			if (chunk.response != NULL) {
@@ -465,7 +465,7 @@ Edit* OpenAIService::CreateEdit(EditData data)
 			curl_easy_getinfo(httpsClient, CURLINFO_RESPONSE_CODE, &response_code);
 			std::cout << "Response code: " << response_code << std::endl;
 			std::cout << "Response body: " << std::endl;
-			std::cout << chunk.response << std::endl;  // 输出响应体
+			std::cout << chunk.response << std::endl;  // 
 
 			// Parse JSON data from a string
 			if (chunk.response != NULL) {
@@ -533,7 +533,7 @@ vector<string> OpenAIService::CreateImage(CreateImageData data)
 			curl_easy_getinfo(httpsClient, CURLINFO_RESPONSE_CODE, &response_code);
 			std::cout << "Response code: " << response_code << std::endl;
 			std::cout << "Response body: " << std::endl;
-			std::cout << chunk.response << std::endl;  // 输出响应体
+			std::cout << chunk.response << std::endl;  // 
 
 			// Parse JSON data from a string
 			if (chunk.response != NULL) {
@@ -627,7 +627,7 @@ vector<string> OpenAIService::CreateImageEdit(ImageEditData data)
 			curl_easy_getinfo(httpsClient, CURLINFO_RESPONSE_CODE, &response_code);
 			std::cout << "Response code: " << response_code << std::endl;
 			std::cout << "Response body: " << std::endl;
-			std::cout << chunk.response << std::endl;  // 输出响应体
+			std::cout << chunk.response << std::endl;  // 
 
 			// Parse JSON data from a string
 			if (chunk.response != NULL) {
@@ -711,7 +711,7 @@ vector<string> OpenAIService::CreateImageVariation(ImageVariationData data)
 			curl_easy_getinfo(httpsClient, CURLINFO_RESPONSE_CODE, &response_code);
 			std::cout << "Response code: " << response_code << std::endl;
 			std::cout << "Response body: " << std::endl;
-			std::cout << chunk.response << std::endl;  // 输出响应体
+			std::cout << chunk.response << std::endl;  // 
 
 			// Parse JSON data from a string
 			if (chunk.response != NULL) {
@@ -797,7 +797,7 @@ Embedding* OpenAIService::CreateEmbeddings(EmbeddingsData data)
 			curl_easy_getinfo(httpsClient, CURLINFO_RESPONSE_CODE, &response_code);
 			std::cout << "Response code: " << response_code << std::endl;
 			std::cout << "Response body: " << std::endl;
-			std::cout << chunk.response << std::endl;  // 输出响应体
+			std::cout << chunk.response << std::endl;  // 
 
 			// Parse JSON data from a string
 			if (chunk.response != NULL) {
@@ -1033,7 +1033,7 @@ vector<OpenAIFile> OpenAIService::ListFiles()
 			curl_easy_getinfo(httpsClient, CURLINFO_RESPONSE_CODE, &response_code);
 			std::cout << "Response code: " << response_code << std::endl;
 			std::cout << "Response body: " << std::endl;
-			std::cout << chunk.response << std::endl;  // 输出响应体
+			std::cout << chunk.response << std::endl;  // 
 
 			if (chunk.response != NULL) {
 				Json::Value json;
@@ -1111,7 +1111,7 @@ OpenAIFile* OpenAIService::UploadFile(UploadFileData data)
 			curl_easy_getinfo(httpsClient, CURLINFO_RESPONSE_CODE, &response_code);
 			std::cout << "Response code: " << response_code << std::endl;
 			std::cout << "Response body: " << std::endl;
-			std::cout << chunk.response << std::endl;  // 输出响应体
+			std::cout << chunk.response << std::endl;  // 
 
 			if (chunk.response != NULL) {
 				Json::Value json;
@@ -1168,7 +1168,7 @@ GeneralDeleteResult* OpenAIService::DeleteFile(GeneralFileData data)
 			curl_easy_getinfo(httpsClient, CURLINFO_RESPONSE_CODE, &response_code);
 			std::cout << "Response code: " << response_code << std::endl;
 			std::cout << "Response body: " << std::endl;
-			std::cout << chunk.response << std::endl;  // 输出响应体
+			std::cout << chunk.response << std::endl;  // 
 
 			if (chunk.response != NULL) {
 				Json::Value json;
@@ -1224,7 +1224,7 @@ OpenAIFile* OpenAIService::RetrieveFile(GeneralFileData data)
 			curl_easy_getinfo(httpsClient, CURLINFO_RESPONSE_CODE, &response_code);
 			std::cout << "Response code: " << response_code << std::endl;
 			std::cout << "Response body: " << std::endl;
-			std::cout << chunk.response << std::endl;  // 输出响应体
+			std::cout << chunk.response << std::endl;  // 
 
 			if (chunk.response != NULL) {
 				Json::Value json;
@@ -1278,7 +1278,7 @@ void OpenAIService::RetrieveFileContent(RetrieveFileContentData data)
 			curl_easy_getinfo(httpsClient, CURLINFO_RESPONSE_CODE, &response_code);
 			std::cout << "Response code: " << response_code << std::endl;
 			std::cout << "Response body: " << std::endl;
-			std::cout << chunk.response << std::endl;  // 输出响应体
+			std::cout << chunk.response << std::endl;  // 
 
 			if (chunk.response != NULL) {
 				ofstream outfile(data.savedFilePath);
@@ -1376,7 +1376,7 @@ FineTune* OpenAIService::CreateFineTune(CreateFineTuneData data)
 			curl_easy_getinfo(httpsClient, CURLINFO_RESPONSE_CODE, &response_code);
 			std::cout << "Response code: " << response_code << std::endl;
 			std::cout << "Response body: " << std::endl;
-			std::cout << chunk.response << std::endl;  // 输出响应体
+			std::cout << chunk.response << std::endl;  // 
 
 			// Parse JSON data from a string
 			if (chunk.response != NULL) {
@@ -1424,7 +1424,7 @@ std::vector<FineTune> OpenAIService::ListFineTunes()
 			curl_easy_getinfo(httpsClient, CURLINFO_RESPONSE_CODE, &response_code);
 			std::cout << "Response code: " << response_code << std::endl;
 			std::cout << "Response body: " << std::endl;
-			std::cout << chunk.response << std::endl;  // 输出响应体
+			std::cout << chunk.response << std::endl;  // 
 
 			if (chunk.response != NULL) {
 				Json::Value json;
@@ -1484,7 +1484,7 @@ FineTune* OpenAIService::RetrieveFineTune(GeneralFineTuneData data)
 			curl_easy_getinfo(httpsClient, CURLINFO_RESPONSE_CODE, &response_code);
 			std::cout << "Response code: " << response_code << std::endl;
 			std::cout << "Response body: " << std::endl;
-			std::cout << chunk.response << std::endl;  // 输出响应体
+			std::cout << chunk.response << std::endl;  // 
 
 			if (chunk.response != NULL) {
 				Json::Value json;
@@ -1540,7 +1540,7 @@ FineTune* OpenAIService::CancelFineTune(GeneralFineTuneData data)
 			curl_easy_getinfo(httpsClient, CURLINFO_RESPONSE_CODE, &response_code);
 			std::cout << "Response code: " << response_code << std::endl;
 			std::cout << "Response body: " << std::endl;
-			std::cout << chunk.response << std::endl;  // 输出响应体
+			std::cout << chunk.response << std::endl;  // 
 
 			if (chunk.response != NULL) {
 				Json::Value json;
@@ -1600,7 +1600,7 @@ std::vector<FineTuneEvent> OpenAIService::ListFineTuneEvents(ListFineTuneEventsD
 			curl_easy_getinfo(httpsClient, CURLINFO_RESPONSE_CODE, &response_code);
 			std::cout << "Response code: " << response_code << std::endl;
 			std::cout << "Response body: " << std::endl;
-			std::cout << chunk.response << std::endl;  // 输出响应体
+			std::cout << chunk.response << std::endl;  // 
 
 			if (chunk.response != NULL) {
 				Json::Value json;
@@ -1660,7 +1660,7 @@ GeneralDeleteResult* OpenAIService::DeleteFineTuneModel(DeleteFineTuneModelData 
 			curl_easy_getinfo(httpsClient, CURLINFO_RESPONSE_CODE, &response_code);
 			std::cout << "Response code: " << response_code << std::endl;
 			std::cout << "Response body: " << std::endl;
-			std::cout << chunk.response << std::endl;  // 输出响应体
+			std::cout << chunk.response << std::endl;
 
 			if (chunk.response != NULL) {
 				Json::Value json;
@@ -1747,7 +1747,7 @@ Moderation* OpenAIService::CreateModeration(CreateModerationData data)
 			curl_easy_getinfo(httpsClient, CURLINFO_RESPONSE_CODE, &response_code);
 			std::cout << "Response code: " << response_code << std::endl;
 			std::cout << "Response body: " << std::endl;
-			std::cout << chunk.response << std::endl;  // 输出响应体
+			std::cout << chunk.response << std::endl;
 
 			// Parse JSON data from a string
 			if (chunk.response != NULL) {
@@ -1908,7 +1908,7 @@ void OpenAIService::TestCurl2 ()
 			curl_easy_getinfo(httpsClient, CURLINFO_RESPONSE_CODE, &response_code);
 			std::cout << "Response code: " << response_code << std::endl;
 			std::cout << "Response body: " << std::endl;
-			std::cout << chunk.response << std::endl;  // 输出响应体
+			std::cout << chunk.response << std::endl;
 		}
 		else 
 		{
