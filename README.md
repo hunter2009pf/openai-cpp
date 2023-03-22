@@ -1,4 +1,7 @@
 # OpenAI-Cpp
+
+[![Language](https://img.shields.io/badge/language-C++-blue.svg)](https://isocpp.org/)  [![Standard](https://img.shields.io/badge/c%2B%2B-11-blue.svg)](https://en.wikipedia.org/wiki/C%2B%2B#Standardization) [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT) ![Github worflow](https://github.com/olrea/openai-cpp/actions/workflows/cmake.yml/badge.svg)
+
 C++ library for calling OpenAI's api.
 Only one OpenAIService class implements all network requests.
 > it’s an "community-maintained" library and welcome anyone who holds interest in General Language Model to join us.
