@@ -1,7 +1,4 @@
-﻿// openai-cpp.h: 标准系统包含文件的包含文件
-// 或项目特定的包含文件。
-
-#pragma once
+﻿#pragma once
 
 #define CURL_STATICLIB
 #define _CRT_SECURE_NO_WARNINGS
@@ -248,11 +245,4 @@ public:
 	 * content policy. @related https://platform.openai.com/docs/guides/moderation
 	*/
 	Moderation* CreateModeration(CreateModerationData data);
-
-	
-	void TestCurl();
-
-	void TestCurl2();
 };
-
-// TODO: 在此处引用程序需要的其他标头。
