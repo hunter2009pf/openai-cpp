@@ -5,6 +5,7 @@
 
 #include <string>
 #include <vector>
+#include "openai_constant.h"
 
 class EmbeddingsData {
 public:
@@ -12,7 +13,7 @@ public:
 	std::vector<std::string> input; // Required
 	std::string user;
 
-	long requestTimeOutInSecond = 10L;
+	long requestTimeOutInSecond = OpenAIConstant::DEFAULT_REQUEST_TIMEOUT;
 };
 
 #endif // !__OPEN_AI_EMBEDDINGS_DATA__

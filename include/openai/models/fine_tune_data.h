@@ -5,6 +5,7 @@
 
 #include <string>
 #include <vector>
+#include "openai_constant.h"
 
 class CreateFineTuneData {
 public:
@@ -21,14 +22,14 @@ public:
 	std::vector<double> classification_betas;
 	std::string suffix;
 
-	long requestTimeOutInSecond = 10L;
+	long requestTimeOutInSecond = OpenAIConstant::DEFAULT_REQUEST_TIMEOUT;
 };
 
 class GeneralFineTuneData {
 public:
 	std::string fine_tune_id;
 
-	long requestTimeOutInSecond = 10L;
+	long requestTimeOutInSecond = OpenAIConstant::DEFAULT_REQUEST_TIMEOUT;;
 };
 
 class ListFineTuneEventsData : public GeneralFineTuneData {
@@ -40,7 +41,7 @@ class DeleteFineTuneModelData {
 public:
 	std::string model; // Required
 
-	long requestTimeOutInSecond = 10L;
+	long requestTimeOutInSecond = OpenAIConstant::DEFAULT_REQUEST_TIMEOUT;;
 };
 
 #endif

@@ -12,6 +12,7 @@ private:
 public:
 	static const std::string AUTHERIZATION;
 	static const std::string ORGANIZATION;
+	static const long DEFAULT_REQUEST_TIMEOUT;
 };
 
 class ImageResponseFormat {
