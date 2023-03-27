@@ -4,6 +4,7 @@
 #define __OPEN_AI_TRANSCRIPTION_DATA__
 
 #include <string>
+#include "openai_constant.h"
 
 class TranslationData {
 public:
@@ -13,7 +14,7 @@ public:
 	std::string response_format = "json"; // options: json, text, srt, verbose_json, or vtt.
 	double temperature; // between 0 and 1
 
-	long requestTimeOutInSecond = 10L;
+	long requestTimeOutInSecond = OpenAIConstant::DEFAULT_REQUEST_TIMEOUT;
 
 	TranslationData() {}
 };

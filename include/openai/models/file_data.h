@@ -4,20 +4,21 @@
 #define __OPEN_AI_FILE_DATA__
 
 #include <string>
+#include "openai_constant.h"
 
 class UploadFileData {
 public:
 	std::string filePath; // Required
 	std::string purpose = "fine-tune";  // Required, default value is "fine-tune"
 
-	long requestTimeOutInSecond = 10L;
+	long requestTimeOutInSecond = OpenAIConstant::DEFAULT_REQUEST_TIMEOUT;
 };
 
 class GeneralFileData {
 public:
 	std::string file_id; // Required
 
-	long requestTimeOutInSecond = 10L;
+	long requestTimeOutInSecond = OpenAIConstant::DEFAULT_REQUEST_TIMEOUT;
 };
 
 class RetrieveFileContentData : public GeneralFileData {

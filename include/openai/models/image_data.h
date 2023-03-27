@@ -13,7 +13,7 @@ public:
 	std::string response_format = ImageResponseFormat::URL; // Must be one of url or b64_json.
 	std::string user;
 
-	long requestTimeOutInSecond = 10L; // The default request timeout is 10 seconds.
+	long requestTimeOutInSecond = OpenAIConstant::DEFAULT_REQUEST_TIMEOUT;; // The default request timeout is 10 seconds.
 };
 
 class CreateImageData : public BaseImageData {
