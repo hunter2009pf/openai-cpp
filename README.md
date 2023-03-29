@@ -4,7 +4,7 @@
 
 C++ library for calling OpenAI's api.
 Only one OpenAIService class implements all network requests.
-> it’s an "community-maintained" library and welcome anyone who holds interest in General Language Model to join us.
+> it’s a "community-maintained" library and welcome anyone who holds interest in General Language Model to join us.
 ## Supported APIs
 * [Models](https://platform.openai.com/docs/api-reference/models)
 * [Completions](https://platform.openai.com/docs/api-reference/completions)
