@@ -63,7 +63,7 @@ The library currently supports Windows, Linux and Android platforms.
       ```
 1. Install jsoncpp
    - vcpkg.exe install jsoncpp 
-   (note: vcpkg's default supported architecture is x86, if you need install x86_amd64 arch packages，please modify enviroment variable like this)
+   (note: vcpkg's default supported architecture is x86, if you need install x86_amd64 arch packages，please modify environment variable like this)
       ```
       set system environment variable VCPKG_DEFAULT_TRIPLET=x64-windows
       ```
